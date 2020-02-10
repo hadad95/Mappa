@@ -63,7 +63,7 @@ NSUInteger rows;
 
 %ctor {
 	NSDictionary *prefs = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.kef.mappa"];
-	enabled = [[prefs valueForKey:@"enabled"] boolValue] ? : YES;
+	enabled = [prefs valueForKey:@"enabled"] ? [[prefs valueForKey:@"enabled"] boolValue] : YES;
 	cols = (NSUInteger)[[prefs valueForKey:@"columns"] intValue] ? : 4;
 	rows = (NSUInteger)[[prefs valueForKey:@"rows"] intValue] ? : 4;
 }
