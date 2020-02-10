@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>BetterFolders</string>
+	<string>Mappa</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kef.betterfolders</string>
+	<string>com.kef.mappa</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -19,6 +19,6 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>NSPrincipalClass</key>
-	<string>BFRootListController</string>
+	<string>MPRootListController</string>
 </dict>
 </plist>

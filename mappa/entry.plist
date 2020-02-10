@@ -5,17 +5,17 @@
 	<key>entry</key>
 	<dict>
 		<key>bundle</key>
-		<string>BetterFolders</string>
+		<string>Mappa</string>
 		<key>cell</key>
 		<string>PSLinkCell</string>
 		<key>detail</key>
-		<string>BFRootListController</string>
+		<string>MPRootListController</string>
 		<key>icon</key>
 		<string>icon.png</string>
 		<key>isController</key>
 		<true/>
 		<key>label</key>
-		<string>BetterFolders</string>
+		<string>Mappa</string>
 	</dict>
 </dict>
 </plist>

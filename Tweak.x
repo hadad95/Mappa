@@ -62,7 +62,7 @@ NSUInteger rows;
 %end
 
 %ctor {
-	NSDictionary *prefs = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.kef.betterfolders"];
+	NSDictionary *prefs = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.kef.mappa"];
 	enabled = [[prefs valueForKey:@"enabled"] boolValue];
 	cols = (NSUInteger)[[prefs valueForKey:@"columns"] intValue];
 	rows = (NSUInteger)[[prefs valueForKey:@"rows"] intValue];

@@ -1,9 +1,9 @@
-Package: com.kef.betterfolders
-Name: BetterFolders
+Package: com.kef.mappa
+Name: Mappa
 Depends: mobilesubstrate
 Version: 1.0.0
 Architecture: iphoneos-arm
-Description: A tweak that allows you to customize your folders!
+Description: A tweak that allows you to customize the number of rows and icons in your folders!
 Maintainer: Kef
 Author: Kef
 Section: Tweaks
