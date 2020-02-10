@@ -62,8 +62,9 @@ NSUInteger rows;
 %end
 
 %ctor {
-	NSDictionary *prefs = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.kef.mappa"];
-	enabled = [prefs valueForKey:@"enabled"] ? [[prefs valueForKey:@"enabled"] boolValue] : YES;
-	cols = (NSUInteger)[[prefs valueForKey:@"columns"] intValue] ? : 4;
-	rows = (NSUInteger)[[prefs valueForKey:@"rows"] intValue] ? : 4;
+	NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:@"com.kef.mappa"];
+	NSNumber *en = [prefs objectForKey:@"enabled"];
+	enabled = en ? [en boolValue] : YES;
+	cols = (NSUInteger)[[prefs objectForKey:@"columns"] intValue] ? : 4;
+	rows = (NSUInteger)[[prefs objectForKey:@"rows"] intValue] ? : 4;
 }
