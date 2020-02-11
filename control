@@ -1,7 +1,7 @@
 Package: com.kef.mappa
 Name: Mappa
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
-Version: 1.0.4
+Version: 1.0.5
 Architecture: iphoneos-arm
 Description: A tweak that allows you to customize the number of rows and icons in your folders!
 Maintainer: Kef
