@@ -64,7 +64,7 @@ NSUInteger rows;
 %end
 
 %ctor {
-	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"ws.hbang.common.demo"];
+	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"com.kef.mappa"];
 	[prefs registerBool:&enabled default:YES forKey:@"enabled"];
 	[prefs registerUnsignedInteger:&cols default:4 forKey:@"columns"];
 	[prefs registerUnsignedInteger:&rows default:4 forKey:@"rows"];
