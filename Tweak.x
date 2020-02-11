@@ -1,3 +1,5 @@
+#import <Cephei/HBPreferences.h>
+
 @interface SBFolderIconListView
 + (NSUInteger)maxVisibleIconRowsInterfaceOrientation:(NSUInteger)arg1;
 + (NSUInteger)iconColumnsForInterfaceOrientation:(NSUInteger)arg1;
@@ -62,9 +64,8 @@ NSUInteger rows;
 %end
 
 %ctor {
-	NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:@"com.kef.mappa"];
-	NSNumber *en = [prefs objectForKey:@"enabled"];
-	enabled = en ? [en boolValue] : YES;
-	cols = (NSUInteger)[[prefs objectForKey:@"columns"] intValue] ? : 4;
-	rows = (NSUInteger)[[prefs objectForKey:@"rows"] intValue] ? : 4;
+	HBPreferences *prefs = [[HBPreferences alloc] initWithIdentifier:@"ws.hbang.common.demo"];
+	[prefs registerBool:&enabled default:YES forKey:@"enabled"];
+	[prefs registerUnsignedInteger:&cols default:4 forKey:@"columns"];
+	[prefs registerUnsignedInteger:&rows default:4 forKey:@"rows"];
 }

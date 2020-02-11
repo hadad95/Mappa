@@ -8,6 +8,7 @@ TWEAK_NAME = Mappa
 
 Mappa_FILES = Tweak.x
 Mappa_CFLAGS = -fobjc-arc
+Mappa_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += mappa
